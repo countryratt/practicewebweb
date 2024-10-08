@@ -1,0 +1,76 @@
+* { /*웹페이지에 있는 모든 요소에 공통적으로 적용되는 스타일*/
+    font-family: "Old Standard TT", serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header-banner { /*상단 스타일*/
+    background-color: #161515;
+    height: 130px;
+    display: flex;
+    justify-content: space-between; /*양끝정렬*/
+    align-items: center; /*가운데정렬*/
+    padding: 50px; /*양 끝 얼마나 빈 공간 둘지*/
+}
+
+.header-left { /*상단 왼쪽 글씨*/
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1.0;
+    text-align: left;
+    font-weight: 400;
+}
+
+.header-right { /*상단 오른쪽 글씨*/
+    color: #ffffff;
+    font-size: 10px;
+    line-height: 1.5;
+    text-align: right;
+}
+
+.content-blabla {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /*fr은 'fraction'(부분)이라는 뜻. 화면을 비율로 나눌 때 쓰는 단위.
+    1fr은 화면의 1부분을 차지하고,3fr은 화면의 3부분을 차지.즉, 4개의 그리드 중 1fr이 왼쪽이여*/
+    width: 100%;
+}
+
+.left-box {
+    background-color: #d2dedf;
+    display: flex;
+    content: center;
+    padding: 40px;
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: left;
+    height: 100%;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.left-box p {
+    margin-top: 12%; 
+}
+
+.right-box {
+    background-color: #faf8f2;
+    padding: 20px;
+    height: 100%;
+}
+
+.photo-table {
+    width: 100%;
+    border-spacing: 20px; /* 이미지 간격 */
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+}
